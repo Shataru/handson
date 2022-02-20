@@ -1,0 +1,13 @@
+function ebBill(unitsConsumed){
+	if (unitsConsumed <= 100)  
+            return 0; 
+    else if(unitsConsumed<=300)
+        return (unitsConsumed-100)*1.5;
+    else if(unitsConsumed<=600)
+        return (unitsConsumed-100)*3.5;
+    else if(unitsConsumed<=1000)
+        return (unitsConsumed-100)*5.5;
+    else
+        return (unitsConsumed-600)*7.5;
+}
+console.log(ebBill(320));

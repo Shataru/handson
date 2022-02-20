@@ -1,0 +1,25 @@
+function findPrimeNumber(number)
+{
+    if(number<=0){
+        return number+" is neither a prime number nor a composite number";
+    }
+     else if (number === 2) {
+    return number+" is a prime number" ;
+    }
+     else if (number > 1) {
+      for (var i = 2; i < number; i++) {
+
+      if (number % i !== 0) {
+        return number+" is a prime number";
+      } else if (number === i * i) {
+        return number+" is not a prime number";
+      } else {
+        return number+" is not a prime number";
+      }
+    }
+  } else {
+    return number+" is neither a prime number nor a composite number";
+  }
+
+}
+console.log(findPrimeNumber(11));
